@@ -13,7 +13,7 @@ public class RecursionExample {
 		}
 		
 		// Recursive logic taking the value of the current index and multiplying
-		// it by the product of all the remaining elements after this index.
+		// it by the product of all previous elements in the array.
 		return numArray[arrIndex] * productNum(numArray, arrIndex - 1);
 	}
 
@@ -39,7 +39,7 @@ public class RecursionExample {
 		result = productNum(numArray, numArray.length - 1);
 		
 		// Print the result of the product of all numbers entered
-		System.out.println("\nThe product of the numbers entered are: " + result);
+		System.out.println("\nThe product of the numbers entered is: " + result);
 
 	}
 
