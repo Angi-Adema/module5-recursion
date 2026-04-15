@@ -1,0 +1,13 @@
+# Eclipse files (IGNORE THESE)
+.classpath
+.project
+.settings/
+
+# Build output
+bin/
+out/
+target/
+
+# OS junk
+.DS_Store
+Thumbs.db
