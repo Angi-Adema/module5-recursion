@@ -8,13 +8,13 @@ public class RecursionExample {
 	public static int productNum(int[] numArray, int arrIndex) {
 		
 		// Base case
-		if (arrIndex == numArray.length) {
+		if (arrIndex < 0) {
 			return 1;
 		}
 		
 		// Recursive logic taking the value of the current index and multiplying
 		// it by the product of all the remaining elements after this index.
-		return numArray[arrIndex] * productNum(numArray, arrIndex + 1);
+		return numArray[arrIndex] * productNum(numArray, arrIndex - 1);
 	}
 
 	public static void main(String[] args) {
@@ -36,7 +36,7 @@ public class RecursionExample {
 		}
 		
 		// Multiply all the numbers in the array starting at index 0
-		result = productNum(numArray, 0);
+		result = productNum(numArray, numArray.length - 1);
 		
 		// Print the result of the product of all numbers entered
 		System.out.println("\nThe product of the numbers entered are: " + result);
