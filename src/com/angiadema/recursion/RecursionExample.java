@@ -38,7 +38,7 @@ public class RecursionExample {
 		// Multiply all the numbers in the array starting at index 0
 		result = productNum(numArray, 0);
 		
-
+		System.out.println("\nThe product of the numbers entered are: " + result);
 
 	}
 
